@@ -71,12 +71,22 @@ gdpdiff$X2020 <- as.numeric(gdpdiff$X2020)
 
 gdpdiff <- gdpdiff %>%
   filter(!is.na(X2007) & !is.na(X2008) & !is.na(X2019) & !is.na(X2020)) %>%
-  mutate(diff2008 = X2008 - X2007, diff2020 = X2020 - X2019)
+  mutate(diff2008 = (X2008 - X2007)/X2007, diff2020 = (X2020 - X2019)/X2019)
 
 summary(gdpdiff$diff2008)
 hist(gdpdiff$diff2008)
 summary(gdpdiff$diff2020)
 hist(gdpdiff$diff2020)
+
+# find out the top three countries with highest gdp decrease
+sorted2008gdp <- gdpdiff %>%
+  arrange(diff2008)
+print("According to the data, the top three countries with highest gdp decrease is Chad, Uruguay, and Palau in 2008")
+
+sorted2020gdp <- gdpdiff %>%
+  arrange(diff2020)
+print("According to the data, the top three countries with highest gdp decrease is S„o TomÈ and PrÌncipe, Comoros, St. Lucia in 2020")
+
 
 # we will calculate the percent of number of countries gdp decrease
 # for 2008

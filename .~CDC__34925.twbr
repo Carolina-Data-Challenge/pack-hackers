@@ -21,8 +21,8 @@
   <style>
     <_.fcp.MarkAnimation.true...style-rule element='animation'>
       <format attr='animation-style' value='as-phased' />
-      <format attr='animation-duration' value='2' />
-      <format attr='animation-on' value='ao-off' />
+      <format attr='animation-on' value='ao-on' />
+      <format attr='animation-duration' value='3' />
     </_.fcp.MarkAnimation.true...style-rule>
   </style>
   <datasources>
@@ -245,14 +245,14 @@
         </view>
         <style>
           <style-rule element='axis'>
-            <encoding attr='space' class='0' field='[federated.0cxor7i1e2p8h612zqnj41v66n33].[Longitude (generated)]' field-type='quantitative' max='27289867.079344824' min='-25333347.838092525' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
-            <encoding attr='space' class='0' field='[federated.0cxor7i1e2p8h612zqnj41v66n33].[Latitude (generated)]' field-type='quantitative' max='22262900.248476941' min='-22418404.766764507' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.0cxor7i1e2p8h612zqnj41v66n33].[Longitude (generated)]' field-type='quantitative' max='35424804.095922217' min='-33384990.961981151' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0cxor7i1e2p8h612zqnj41v66n33].[Latitude (generated)]' field-type='quantitative' max='21511390.150155269' min='-21348948.088383693' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
           </style-rule>
           <style-rule element='cell'>
             <format attr='text-format' field='[federated.0cxor7i1e2p8h612zqnj41v66n33].[sum:GDP:qk]' value='n#,##0.000;-#,##0.000' />
           </style-rule>
           <style-rule element='mark'>
-            <encoding attr='color' field='[federated.0cxor7i1e2p8h612zqnj41v66n33].[sum:GDP:qk]' num-steps='7' palette='sunrise_sunset_diverging_10_0' type='interpolated' />
+            <encoding attr='color' field='[federated.0cxor7i1e2p8h612zqnj41v66n33].[sum:GDP:qk]' num-steps='7' palette='red_green_diverging_10_0' type='interpolated' />
           </style-rule>
           <style-rule element='map'>
             <format attr='washout' value='0.0' />
@@ -613,7 +613,7 @@
       </cards>
       <simple-id uuid='{5AAAD662-7DA9-4552-94D5-5B8BF9F7E61C}' />
     </window>
-    <window class='worksheet' maximized='true' name='Sheet 1 (2)'>
+    <window class='worksheet' name='Sheet 1 (2)'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -688,7 +688,7 @@
       <active id='3' />
       <simple-id uuid='{98D4AD57-06B9-41F0-9D03-DDF69E087414}' />
     </window>
-    <window class='worksheet' name='Sheet 1 (3)'>
+    <window class='worksheet' maximized='true' name='Sheet 1 (3)'>
       <cards>
         <edge name='left'>
           <strip size='160'>
